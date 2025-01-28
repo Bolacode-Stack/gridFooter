@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Raleway", serif;
+}
+
+.container {
+    gap: 10px;
+    top: 420px;
+    display: grid;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background: linear-gradient(to right, black, navy);
+}
+
+a {
+    color: white;
+}
+
+h2 {
+    max-width: 11ch;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+li > i {
+    display: flex;
+}
+
+.fourthColumn {
+    grid-column: 5;
+}
+
+.row {
+    padding-block-start: 20px;
+    line-height: 1.5;
+}
+
+a > i  {
+    margin-left: 10px;
+    padding-block-start: 20px;
+}
+
+.see:hover {
+    color: firebrick
+}
+
+ i:hover {
+     margin-right: 6px;
+     transition: 0.4s ease;
+}
+
+.map {
+    padding-block-start: 22px;
+}
+
+.link:hover {
+    color: firebrick
+}
+
+.socials {
+    display: flex;
+    justify-self: start;
+    padding-block-start: 10px;
+}
+
+.socials > li {
+    margin-right: 50px;
+}
+
+.socials i:hover {
+    cursor: pointer;
+    color: firebrick;
+}
+
+.sign a:hover {
+    color: firebrick;
+}
+
+.follow {
+    padding-block-start: 30px;
+}
+
+/* Section */
+.section {
+    top: 465px;
+    display: grid;
+    color: #fff;
+    padding: 80px;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: firebrick;
+}
+
+p > i  {
+    margin-left: 10px;
+}
+
+.section h1 {
+    font-size: 3em;
+    cursor: pointer;
+    position: relative;
+}
+
+.section h1:before {
+    content: "";
+    bottom: 0;
+    height: 4px;
+    width: 65%;
+    position: absolute;
+    display: inline-block;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+.section h1::before:hover {
+    /* width: 60%; */
+}
+
+.section > i {
+    padding: 30px;
+    justify-self: end;
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient(red, crimson);
+}
+
+@media(width >= 768px)   {
+   .container {
+    top: 465px;
+    position: relative;
+   }
+   
+   .row {
+    padding-block-start: 40px;
+    padding-block-start: 40px;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.follow {
+    margin-top: 30px;
+}
+
+.socials {   
+       margin-top: 30px;
+   }
+
+   .firstColumn {
+    top: 60px;
+    position: relative;
+   }
+} 
+
+@media(width <= 1200px)  {
+    .section { 
+        display: grid;
+        display: block;
+    }
+
+    .section > h1 {
+        padding-block-start: 25px;
+    }
+
+    .section > i {
+        margin-block-start: 25px;
+    }
+}
